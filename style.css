@@ -33,13 +33,24 @@ p1 {
 }
 
 .box {
-  background-color: #ccc;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5); /* degradado moderno */
   padding: 20px 40px;
   text-align: center;
   font-weight: bold;
   width: 150px;
   height: 50px;
-  border: 1px solid #999;
+  border: none;
+  border-radius: 12px;        /* esquinas redondeadas */
+  color: white;
+  font-family: 'Poetsen One', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* sombra suave */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.05);     /* animación al pasar el mouse */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos para los botones */
